@@ -2,14 +2,19 @@
 	$(document).ready(function() {
 		var $select    = $('select'),
 		    $input     = $select.next('input'),
-		    inputClass = 'show';
+		    inputClass = 'show',
+		    checkSelect;
 		
-		$select.change(function () {
+		checkSelect = function () {
 			if ($select.val() === 'other') {
 				$input.addClass(inputClass);
 			} else {
 				$input.removeClass(inputClass);
 			}
-		});
+		};
+		
+		$select.change(checkSelect);
+		
+		checkSelect();
 	});
 }(jQuery, document));
