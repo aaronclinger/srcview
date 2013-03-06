@@ -34,7 +34,7 @@
 								<option value="other" <?=set_select('user_agent', 'other');?>>Other:</option>
 							</select>
 							
-							<input type="text" name="other_agent" value="<?=set_value('other_agent');?>" autocorrect="off" autocapitalize="off">
+							<input type="text" name="other_agent" value="<?=set_value('other_agent');?>" autocorrect="off" autocapitalize="off" placeholder="User Agent String">
 						</dd>
 				</dl>
 				
@@ -48,7 +48,7 @@
 	}
 ?>
 		<footer>
-			<p>Built by <a href="http://aaronclinger.com/" target="_blank">Aaron</a> &amp; <a href="http://lucasishuman.com/" target="_blank">Lucas</a>. Powered by <a href="http://ellislab.com/codeigniter" target="_blank">CodeIgniter</a> &amp; <a href="http://code.google.com/p/google-code-prettify/" target="_blank">Google Code Prettify</a>. Source on <a href="https://github.com/aaronclinger/sourcer" target="_blank">GitHub</a>.</p>
+			<p>Built by <a href="http://aaronclinger.com/" target="_blank">Aaron</a> &amp; <a href="http://lucasishuman.com/" target="_blank">Lucas</a>.<br>Powered by <a href="http://ellislab.com/codeigniter" target="_blank">CodeIgniter</a> &amp; <a href="http://code.google.com/p/google-code-prettify/" target="_blank">Prettify</a>.<br>Source on <a href="https://github.com/aaronclinger/sourcer" target="_blank">GitHub</a>.</p>
 		</footer>
 	</body>
 </html>
