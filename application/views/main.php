@@ -4,8 +4,8 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>SRC View</title>
 		<meta name="description" content="A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.">
-		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
 <?php if (isset($source)) { ?>
 		<link rel="icon" type="image/gif" href="/assets/img/favicon-success.gif">
 		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
@@ -14,6 +14,8 @@
 <?php } else { ?>
 		<link rel="icon" type="image/gif" href="/assets/img/favicon.gif">
 <?php } ?>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/assets/js/scripts.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -49,7 +51,7 @@
 		</header>
 <?php if (isset($source)) { ?>
 		
-		<pre><code class="prettyprint linenums"><?php echo htmlentities($source); ?></code></pre>
+		<pre><code class="prettyprint linenums"><?php echo htmlentities($source, ENT_QUOTES, 'UTF-8'); ?></code></pre>
 <?php } ?>
 		
 		<footer>
