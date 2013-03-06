@@ -34,9 +34,12 @@ p {
   margin-bottom: 20px;
   text-rendering: optimizeLegibility;
 }
-p.error {
+p.message {
   font-weight: bold;
   color: #F2ED5A;
+}
+p.message .infinity {
+  font-size: 28px;
 }
 input,
 button,

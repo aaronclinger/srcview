@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>SRCView</title>
+		<title>SRC View</title>
 		<meta name="description" content="A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.">
 		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
 			<p>A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.</p>
 <?php if (isset($error)) { ?>
 			
-			<p class="error"><?php echo isset($message) ? $message : 'HTTP Error: ' . $error; ?></p>
+			<p class="message"><?php echo isset($message) ? $message : 'HTTP Error: ' . $error; ?></p>
 <?php } ?>
 			
 			<form action="/" method="post" accept-charset="utf-8">

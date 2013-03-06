@@ -44,6 +44,14 @@ class Main extends CI_Controller {
 			if ($source_data['success'])
 			{
 				$view_data['source'] = $source_data['source'];
+				
+				$url_parts = parse_url($url);
+				
+				if ($url_parts['host'] === $_SERVER['SERVER_NAME'])
+				{
+					$view_data['error']   = -1;
+					$view_data['message'] = '<span class="infinity">&infin;<span>';
+				}
 			}
 			else
 			{
