@@ -5,11 +5,12 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$view_data = array();
-		$url       = $this->input->post('url', TRUE);
 		
-		if ($url !== FALSE)
+		$user_agent_id = $this->input->post('user_agent', TRUE);
+		
+		if ($user_agent_id !== FALSE)
 		{
-			$user_agent_id = $this->input->post('user_agent', TRUE);
+			$url = $this->input->post('url', TRUE);
 			
 			switch ($user_agent_id)
 			{
@@ -44,32 +45,19 @@ class Main extends CI_Controller {
 			{
 				$view_data['source'] = $source_data['source'];
 			}
+			else
+			{
+				$view_data['error'] = $source_data['error'];
+				
+				if (isset($source_data['message']))
+				{
+					$view_data['message'] = $source_data['message'];
+				}
+			}
 		}
 		
 		$this->load->helper('form');
 		$this->load->view('main', $view_data);
-	}
-	
-	public function json()
-	{
-		$this->output->set_content_type('application/json');
-		
-		$url = $this->input->get_post('url', TRUE);
-		
-		if ($url === FALSE)
-		{
-			$response            = array();
-			$response['success'] = FALSE;
-			$response['error']   = 400;
-			$response['message'] = 'No URL provided.';
-			
-			$this->output->set_output(json_encode($response));
-			return;
-		}
-		
-		$this->load->model('source_model');
-		
-		$this->output->set_output(json_encode($this->source_model->get_source($url, '')));
 	}
 }
 

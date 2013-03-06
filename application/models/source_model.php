@@ -9,12 +9,10 @@ class Source_model extends CI_Model {
 	
 	function get_source($url, $user_agent)
 	{
-		$url_parts = parse_url($url);
-		
 		$response            = array();
 		$response['success'] = FALSE;
 		
-		if ( ! isset($url_parts['scheme']) && ! isset($url_parts['host']))
+		if (preg_match('@(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?«»“”‘’]))@', $url) !== 1)
 		{
 			$response['error']   = 400;
 			$response['message'] = 'Invalid URL provided.';
@@ -37,20 +35,10 @@ class Source_model extends CI_Model {
 		
 		if ($http_code !== 200)
 		{
-			$response['error'] = $http_code;
+			$response['error'] = ($http_code > 0) ? $http_code : 404;
 			
 			return $response;
 		}
-		
-		//$session = array('url' => $url, );
-		
-		/*$cookie = array(
-			'name'   => 'data',
-			'value'  => 'The Value',
-			'expire' => '432000', // 5 Days
-		);
-		
-		$this->input->set_cookie($cookie);*/
 		
 		$response['success'] = TRUE;
 		$response['source']  = $content;

@@ -33,12 +33,24 @@ h1 {
 	font-size: 28px;
 	line-height: 28px;
 	margin-bottom: 4px;
+	text-rendering: optimizeLegibility;
+	
+	span {
+		color: #8E30C1;
+		font-size: 37px;
+	}
 }
 
 p {
 	font-weight: normal;
 	max-width: 400px;
 	margin-bottom: 20px;
+	text-rendering: optimizeLegibility;
+	
+	&.error {
+		font-weight: bold;
+		color: #F2ED5A;
+	}
 }
 
 input,
@@ -86,6 +98,9 @@ select {
 	border: 2px solid #000;
 	width: 100%;
 	max-width: 400px;
+	box-sizing: content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
 }
 
 select + input {
@@ -108,7 +123,7 @@ input[type="text"] {
 button {
 	.transitionProp(color);
 	
-	width: 148px;
+	width: 200px;
 	margin-top: 20px;
 	cursor: pointer;
 	font-family: inherit;
@@ -159,6 +174,12 @@ footer {
 		color: #666;
 		text-decoration: underline;
 		
+		&:link,
+		&:visited {
+			color: #666;
+		}
+		
+		&:active,
 		&:hover {
 			color: #8E30C1;
 		}
