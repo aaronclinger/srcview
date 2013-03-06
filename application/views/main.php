@@ -55,7 +55,7 @@
 <?php } ?>
 		
 		<footer>
-			<p>Built by <a href="http://aaronclinger.com/" target="_blank">Aaron</a> &amp; <a href="http://lucasishuman.com/" target="_blank">Lucas</a>.<br>Powered by <a href="http://ellislab.com/codeigniter" target="_blank">CodeIgniter</a> &amp; <a href="http://code.google.com/p/google-code-prettify/" target="_blank">Prettify</a>.<br>Source on <a href="https://github.com/aaronclinger/srcview" target="_blank">GitHub</a>.</p>
+			<p>Built by <a href="http://aaronclinger.com/" target="_blank">Aaron</a> &amp; <a href="http://lucasishuman.com/" target="_blank">Lucas</a>.<br>Powered by <a href="http://ellislab.com/codeigniter" target="_blank">CodeIgniter</a>, <a href="http://jquery.com/" target="_blank">jQuery</a> &amp; <a href="http://code.google.com/p/google-code-prettify/" target="_blank">Prettify</a>.<br>Source on <a href="https://github.com/aaronclinger/srcview" target="_blank">GitHub</a>.</p>
 		</footer>
 	</body>
 </html>
