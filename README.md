@@ -7,6 +7,6 @@ This project can be used freely for any open source or commercial works and is r
 This project uses [CodeIgniter](http://ellislab.com/codeigniter), [jQuery](http://jquery.com) & [Prettify](http://code.google.com/p/google-code-prettify/). For those unfamilar with CodeIgniter you can find the project-specific PHP classes in the [application/controllers](https://github.com/aaronclinger/srcview/tree/develop/application/controllers) and [application/models](https://github.com/aaronclinger/srcview/tree/develop/application/models) folders.
 
 
-## Author
+## Authors
 
 [Aaron Clinger](http://aaronclinger.com) & [Lucas J. Shuman](http://lucasishuman.com)

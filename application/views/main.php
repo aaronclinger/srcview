@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>SRC View</title>
+		<title>srcview</title>
 		<meta name="description" content="A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
