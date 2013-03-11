@@ -1,6 +1,6 @@
 # SRCVIEW.COM
 
-A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile and/or across user agents.
+A web utility to fetch and view the source of a remote URL. Useful for debugging on mobile and/or across user agents.
 
 This project uses [CodeIgniter](http://ellislab.com/codeigniter), [jQuery](http://jquery.com) & [Prettify](http://code.google.com/p/google-code-prettify/). For those unfamilar with CodeIgniter you can find the project-specific PHP classes in the [application/models](https://github.com/aaronclinger/srcview/tree/master/application/models), [application/views](https://github.com/aaronclinger/srcview/tree/master/application/views) and [application/controllers](https://github.com/aaronclinger/srcview/tree/master/application/controllers) folders.
 

@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>srcview</title>
-		<meta name="description" content="A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.">
+		<meta name="description" content="A web utility to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
 <?php if (isset($source)) { ?>
@@ -23,7 +23,7 @@
 	<body>
 		<header>
 			<h1><span>src</span>View</h1>
-			<p>A web utlity to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.</p>
+			<p>A web utility to fetch and view the source of a remote URL. Useful for debugging on mobile or across user agents.</p>
 <?php if (isset($error)) { ?>
 			
 			<p class="message"><?php echo isset($message) ? $message : 'HTTP Error: ' . $error; ?></p>
