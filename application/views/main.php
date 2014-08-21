@@ -42,6 +42,7 @@
 								<option value="ipad" <?=set_select('user_agent', 'ipad');?>>iPad</option>
 								<option value="andriod_mobile" <?=set_select('user_agent', 'andriod_mobile');?>>Andriod Mobile</option>
 								<option value="andriod_tablet" <?=set_select('user_agent', 'andriod_tablet');?>>Andriod Tablet</option>
+								<option value="googlebot" <?=set_select('user_agent', 'googlebot');?>>Googlebot</option>
 								<option value="other" <?=set_select('user_agent', 'other');?>>Other:</option>
 							</select>
 							

@@ -29,6 +29,9 @@ class Main extends CI_Controller {
 				case 'andriod_tablet' :
 					$user_agent_string = 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19';
 					break;
+				case 'googlebot' :
+					$user_agent_string = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)';
+					break;
 				case 'other' :
 					$other_user_agent  = $this->input->post('other_agent', TRUE);
 					$user_agent_string = ($other_user_agent !== FALSE) ? $other_user_agent : '';
